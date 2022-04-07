@@ -1,0 +1,26 @@
+<%- include('header.ejs') %>
+
+<header class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <h1><%= title %></h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+<div>
+    <% if (utilisateurs && utilisateurs.length >0) { %> 
+    <ul> 
+       
+        <% utilisateurs.map((item,index)=>{ %>
+            <li> <%= index %> nom : <%= item.nom %> , age : <%= item.age %> </li>
+        <% }) %>
+    </ul>
+    <% } else { %> 
+        <span>Aucun utilisateur</span>
+    <% } %>
+</div>
+
+<%- include('footer.ejs') %>

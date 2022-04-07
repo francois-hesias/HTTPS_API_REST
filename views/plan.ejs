@@ -1,0 +1,38 @@
+<!-- Plans -->
+<section class="plans d-flex align-items-center py-5" id="plans">
+    <div class="container text-light" >
+        <div class="text-center pb-4">
+            <p>OUR PLANS</p>
+            <h2 class="py-2">Explore unlimited possibilities</h2>
+            <p class="para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, quia accusantium sunt corporis optio recusandae? Nostrum libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit fuga. Itaque, ea quo.</p>
+        </div>
+        <div class="row gy-4" data-aos="zoom-in">
+            <% movies.map((movie) => { %>
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4">
+                    <h4 class="py-2"><%= movie.genre %></h4>
+                    <p class="py-3"><%= movie.genre %><</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p><%= movie %><</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p><%= movie %></p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p><%= movie%></p>
+                    </div>
+                    <h4 class="py-3"><%= movie.genre %></h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link" >View Plans</a>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of plans -->
+
